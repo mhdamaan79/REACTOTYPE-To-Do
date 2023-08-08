@@ -1,15 +1,16 @@
 import NavBar from "./components/NavBar";
 import AddToDo from "./components/AddToDo";
 import ToDos from "./components/ToDos";
+import "./App.css";
 
 function App() {
   return (
-    <div>
+    <main>
       <h1>REACTOTYPE TODO</h1>
       <NavBar />
       <AddToDo />
       <ToDos />
-    </div>
+    </main>
   );
 }
 

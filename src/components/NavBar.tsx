@@ -2,22 +2,22 @@ import { Link, useSearchParams } from "react-router-dom";
 
 const NavBar = () => {
   const [searchParams] = useSearchParams();
-  const todos̥Data = searchParams.get("todos");
+  const todosData = searchParams.get("task");
 
   return (
     <nav className="container text-center gap-2">
-      <Link to="/" className={todos̥Data === null ? "active" : ""}> 
+      <Link to="/" className={todosData === null ? "active" : ""}>
         All
       </Link>
       <Link
         to="/?task=active"
-        className={todos̥Data === "active" ? "active" : ""}
+        className={todosData === "active" ? "active" : ""}
       >
         Active
       </Link>
       <Link
         to="/?task=completed"
-        className={todos̥Data === "completed" ? "active" : ""}
+        className={todosData === "completed" ? "active" : ""}
       >
         Completed
       </Link>
